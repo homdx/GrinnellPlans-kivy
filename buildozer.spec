@@ -104,11 +104,11 @@ android.permissions = INTERNET
 #android.private_storage = True
 
 # (str) Android NDK directory (if empty, it will be automatically downloaded.)
-android.ndk_path = /home/paul/Android/Sdk/ndk-bundle
+#android.ndk_path = /home/paul/Android/Sdk/ndk-bundle
 ##/opt/android-ndk-r13b
 
 # (str) Android SDK directory (if empty, it will be automatically downloaded.)
-android.sdk_path = /home/paul/Android/Sdk
+#android.sdk_path = /home/paul/Android/Sdk
 
 # (str) ANT directory (if empty, it will be automatically downloaded.)
 #android.ant_path =
@@ -181,7 +181,7 @@ android.sdk_path = /home/paul/Android/Sdk
 [buildozer]
 
 # (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
-log_level = 3
+log_level = 2
 
 # (int) Display warning if buildozer is run as root (0 = False, 1 = True)
 warn_on_root = 1
