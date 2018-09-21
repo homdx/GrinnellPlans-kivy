@@ -70,7 +70,7 @@ RUN sed s/'name="java.target" value="1.5"'/'name="java.target" value="7"'/ -i ${
 #USER ${USER}
 
 RUN time buildozer android debug || echo "Fix build hello world" \
-   cp ${WORKDIR}/.buildozer/android/platform/build/dists/grinnellplans/bin/GrinnellPlans-18.38.1-debug.apk . \
+    && cp ${WORKDIR}/.buildozer/android/platform/build/dists/grinnellplans/bin/GrinnellPlans-18.38.1-debug.apk . \
     && /bin/true
 
 CMD tail -f /var/log/faillog
