@@ -69,8 +69,8 @@ RUN sed s/'name="java.target" value="1.5"'/'name="java.target" value="7"'/ -i ${
 
 #USER ${USER}
 
-RUN time buildozer android release || echo "Fix build hello world" \
-    && cp ${WORK_DIR}/.buildozer/android/platform/build/dists/grinnellplans/bin/GrinnellPlans-18.38.1-release-unsigned.apk ${WORK_DIR} \
+RUN time buildozer android debug || echo "Fix build hello world" \
+    && cp ${WORK_DIR}/.buildozer/android/platform/build/dists/grinnellplans/bin/GrinnellPlans-18.38.1-debug.apk ${WORK_DIR} \
     && /bin/true
 
 CMD tail -f /var/log/faillog
